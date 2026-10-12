@@ -1,0 +1,65 @@
+const NOME = "Laura Nicoletta";
+const COGNOME = "Ziino";
+const output = document.getElementById("output");
+
+function log(...values) {
+  console.log(...values);
+  output.textContent += `${values.join(" ")}\n`;
+}
+
+console.log(`ciao mi chiamo ${NOME} ${COGNOME}`);
+
+let a = 10;
+let b = 20;
+
+console.log(`${a} + ${b} = ${a + b}`);
+console.log(`${a} - ${b} = ${a - b}`);
+console.log(`${a} * ${b} = ${a * b}`);
+console.log(`${a} / ${b} = ${a / b}`);
+console.log(`${a} % ${b} = ${a % b}`);
+console.log(`${a} ** ${b} = ${a ** b}`);
+
+
+
+
+const annoNascita = 2004;
+const annoAttuale = 2026;
+
+console.log(`eta oggi: ${annoAttuale - annoNascita}`);
+console.log(`eta tra 5 anni: ${annoAttuale - annoNascita + 5}`);
+console.log(`eta tra 10 anni: ${annoAttuale - annoNascita + 10}`);
+
+
+
+let eta;
+eta=22;
+let maggiorenne = eta >= 18;
+console.log(`eta: ${eta} -maggiorenne:${maggiorenne}`);
+
+
+let myString = "Laura Ziino";
+let myNumber = 15;
+let myBoolean = true;
+let myUndefined = undefined;
+let myNull = null;
+
+
+console.log(`la variabile: ${myString} e di tipo ${typeof myString}`);
+console.log(`la variabile: ${myNumber} e di tipo ${typeof myNumber}`);
+console.log(`la variabile: ${myBoolean} e di tipo ${typeof myBoolean}`);
+console.log(`la variabile: ${myUndefined} e di tipo ${typeof myUndefined}`);
+console.log(`la variabile: ${myNull} e di tipo ${typeof myNull}`);
+
+
+
+let numero=5
+let stringa="5"
+console.log('numero==stringa', numero==stringa);
+console.log('numero===stringa', numero===stringa);
+
+
+let n;
+n=21;
+console.log(`n e pari: ${n%2===0}`);
+console.log(`n e divisibile per 3: ${n%3===0}`);
+console.log(`n e pari e divisibile per 3: ${n%3===0 && n%2===0}`);
